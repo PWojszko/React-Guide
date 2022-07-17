@@ -11,7 +11,7 @@ function ChildToParentCallback() {
 
   return (
     <div>
-      <h1>Wynik: {result}</h1>
+      <h1>Result: {result}</h1>
       <Child handleIncrement={handleIncrement} result={result} />
     </div>
   );
