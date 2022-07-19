@@ -8,9 +8,11 @@ const FetchingData = () => {
   const [error, setError] = useState<null | String>(null);
 
   useEffect(() => {
+    const apiUrl = "https://randomuser.me/api/";
+
     const fetchData = async () => {
       try {
-        const response = await fetch("https://randomuser.me/api/");
+        const response = await fetch(apiUrl);
         if (!response.ok) {
           throw new Error(`HTTP Error: ${response.status}`);
         }

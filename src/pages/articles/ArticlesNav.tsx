@@ -5,7 +5,7 @@ const ArticlesNav = () => {
   const articlesById = [
     { id: "0", name: "Child to parent callback" },
     { id: "1", name: "Fetching data" },
-    { id: "2", name: "Lorem ipsum" },
+    { id: "2", name: "Promises" },
     { id: "3", name: "Lorem ipsum" },
   ];
 

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import ChildToParentCallback from "./child-to-parent-callback";
 import FetchingData from "./fetching-data";
+import Promises from "./promises";
 
 function Article() {
   const params = useParams();
@@ -22,6 +23,8 @@ function Article() {
       return articlePageContent(<ChildToParentCallback />);
     case "1":
       return articlePageContent(<FetchingData />);
+    case "2":
+      return articlePageContent(<Promises />);
 
     default:
       return articlePageContent(<h1>No article found</h1>);
